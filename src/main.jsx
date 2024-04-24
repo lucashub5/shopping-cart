@@ -5,6 +5,10 @@ import Shop from './Shop';
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Shop />,
+  },
+  {
     path: "/:name",
     element: <Shop />,
   },

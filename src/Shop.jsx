@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import HomeSection from './HomeSection';
 import ShopSection from './ShopSection';
-import DefaultProfile from "./DefaultProfile";
 
 const Shop = () => {
   const [dataFromCards, setDataFromCards] = useState([]);
@@ -36,7 +35,7 @@ const Shop = () => {
             dataFromCards={dataFromCards}
           />
         ) : (
-          <DefaultProfile />
+          <HomeSection />
         )}
         <Footer/>
       </>
